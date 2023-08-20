@@ -8,4 +8,9 @@ export default class UserController{
         const result = await userService.allUsers();
         return res.json(result)
     }
+
+    async addQueueredis(req:Request, res:Response){
+        const result = await userService.addQueueredis()
+        return res.json(result)
+    }
 }
